@@ -31,55 +31,80 @@ We built saveDAI to automate most of those steps in order to...
 1. Make it easier for the existing DeFi community -- users and developers alike -- to insure their interest-bearing savings
 2. Enable a wholy new set of people to open a protected savings account without a bank
 
-## How can I use saveDAI?
+## Using saveDAI
 
-TBD
+saveDAI is an insured savings account. You can do anything with saveDAI you can do with a normal savings account, and more:
 
-## Buying saveDAI
+- open an account / deposit funds (DAI)
+- withdraw your funds
+- make an insurance claim
+- transfer your savings account (to another wallet you control, or to somebody else)
+- sell your account
 
-### How is saveDAI priced?
+### How do I open a saveDAI account?
 
-TBD
+All you have to do to open a saveDAI account is make a deposit. That's it! No forms to fill out, no verification required.
 
-### How do claims work?
+### OK, so how do I make a deposit?
 
-TBD
+If you already have DAI, go to the [saveDAI app](https://app.savedai.xyz), Connect your wallet, enter how much DAI you want to deposit, Unlock DAI, and then click Deposit. In the Unlock step, you give approval for saveDAI to manage the DAI you deposit.
 
-### How is insurance coverage provided?
+Once the deposit is complete, you'll receive saveDAI tokens in your wallet.
 
-TBD
+If don't yet have DAI, to use saveDAI today you'll need to get some. See the 'Step 1, get DAI' section from [this article](https://bankless.substack.com/p/how-to-get-a-dai-saving-account) for a couple good options. 
+
+We're working on ways for you to deposit directly into saveDAI without needing to have DAI at all. Follow our [blog](https://blog.savedai.xyz) or on [twitter](https://twitter.com/save_dai to receive the latest updates.
 
 ### How does interest accrue?
 
 TBD
 
-## Withdrawing saveDAI
+### Why do I have so many saveDAI tokens in my wallet?
 
-### How can I withdraw for the asset and oTokens \(i.e., cDAI and ocDAI\)?
+To minimize both security risks and transaction costs, saveDAI tokens are denominated in the same units as cDAI (tokens representing DAI lent and earning interest via Compound). Because the DAI in Compound is earning interest, cDAI tokens are worth an ever-increasing amount of DAI. Many Ethereum wallets today do the conversion to show you how much DAI your cDAI is worth, but those wallets may not yet do the same for saveDAI tokens. You will always be able to see how much DAI your saveDAI is worth in the [saveDAI app](https://app.savedai.xyz), which denominats saveDAI in terms of DAI.
 
-TBD
+### How do I withdraw my money from saveDAI?
 
-### How can I withdraw just the asset \(i.e., cDAI\)?
+Once you've deposited into saveDAI, you can withdraw at any time via the Manage section of the [saveDAI app](https://app.savedai.xyz). Click Withdraw, then simply enter the amount of saveDAI you want to withdraw (denominated in DAI) and click Withdraw again.
 
-TBD
+When you withdraw from saveDAI, you receive both component parts of saveDAI. You'll receive the interest-generating component in the form of cDAI tokens and the insurance component in the form of ocDAI tokens.
 
-### How can I withdraw for the underlying asset \(i.e., DAI\)?
+In future versions, you'll be able to choose the form of your withdrawal. For example, instead of receiving both cDAI and DAI, you'll be able to ask saveDAI to convert it all into cDAI or even DAI.
 
-TBD
+### What are insurance claims and why would I make one?
 
-## Exercising Insurance
+saveDAI's insurance protects your principal from many risks, including adverse financial revents and hacks on the DAI or Compound protocols. If such an adverse event were to cause the dollar-value of your savings, you could use your insurance to claim the original value of your principal (minus a deductible).
 
-### Why should I exercise insurance?
+Insurance claims are processed automatically by the Opyn protocol. There are no humans involved to reject or delay your claim.
 
-TBD
+### How do I make an insurance claim?
 
-### How can I exercise insurance?
+You can make a claim any time after you deposit and before the insurance expires -- though it probably wouldn't make sense to do so unless an adverse event occured that impacted the dollar-value of your savings. To make a claim, head to the Manage section of the [saveDAI app](https://app.savedai.xyz), click Claim, enter the amount of saveDAI on which to make a claim (denominated in DAI), and then click Claim again.
 
-TBD
+Once your claim goes through -- which will take only as long as the Ethereum transaction -- you'll receive back ETH with a value equal to your deposit principal (minus a deductible)
+
+### How is insurance coverage provided?
+
+saveDAI sources its insurance from protective put options created and managed by the Opyn protocol. See [Opyn's FAQ](https://opyn.gitbook.io/opyn/faq#buying-insurance) for more information.
+
+### When does the insurance expire?
+
+The current version of insurance expires on February 10, 2021.
+
+### Why is my Amount Insured lower than my deposit?
+
+saveDAI's insurance includes a deductible. Your Amount Insured equals your Principal (the amount lent on Compound) minus the Deductible.
+
+### Why is there a Deductible?
+
+The insurance Deductible is set by the Opyn protocol. Under the hood, insurance from Opyn is a type of financial option called a "protective put", and the strike price for Opyn options is typically set slightly below the current value of the asset they protect (aka slightly "out of the money"). 
+
+See [Opyn's FAQ](https://opyn.gitbook.io/opyn/faq#what-is-max-loss) and [whitepaper](http://convexity.opyn.co/) for more information.
 
 ## Can I build on top of saveDAI?
 
 TBD
+
 
 ## Security
 
@@ -89,9 +114,10 @@ TBD
 
 ### What if there is a bug in the saveDAI contract?
 
-We recognize that this is a risk, and we have taken precautions to protect against this risk with rigorous internal testing and an external audit \[include link to audit report\]. 
+We recognize that this is a risk, and we have taken precautions to protect against this risk with rigorous internal testing as well as an external audit \[include link to audit report\]. 
 
-Even with this risk, you can still gain significant safety from the oTokens that are used to insure your saveDAI. From [Opyn's documentation](https://opyn.gitbook.io/opyn/faq#what-if-there-is-a-bug-in-opyns-smart-contracts), "\[w\]ith Opyn insurance, you can only lose your Compound deposits in the case that both Opyn and Compound are compromised at the same time. For example, if the probability that Opyn is compromised is 1% and the probability that Compound is compromised is 1%, then with Opyn insurance, your risk of losing your funds drops to 0.01%."
+Even with this risk, you can still gain significant safety from the oTokens that are used to insure your saveDAI. From [Opyn's documentation](https://opyn.gitbook.io/opyn/faq#what-if-there-is-a-bug-in-opyns-smart-contracts),
+>\[w\]ith Opyn insurance, you can only lose your Compound deposits in the case that both Opyn and Compound are compromised at the same time. For example, if the probability that Opyn is compromised is 1% and the probability that Compound is compromised is 1%, then with Opyn insurance, your risk of losing your funds drops to 0.01%.
 
 ### Does the saveDAI contract have an administrator?
 
