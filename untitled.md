@@ -78,9 +78,5 @@ Even with this risk, you can still gain significant safety from the oTokens that
 
 ### Does the saveDAI contract have an administrator?
 
-TBD
-
-
-
-
+Yes, saveDAI has an extremely small administrative footprint. The owner of the saveDAI contract has the ability to change the name of the saveDAI token. The current name of the saveDAI token is `saveDAI_20210210` . The date portion \(i.e., `20210210` \) represents the expiration date of the current insurance on your saveDAI tokens. In other words, it represents Opyn's current oToken "expiry date".
 
