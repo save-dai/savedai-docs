@@ -1,12 +1,84 @@
+---
+description: >-
+  The driving force behind saveDAI is the belief that we can help more savers
+  protect their savings by making deposit insurance dead simple.
+---
+
 # FAQ
 
-## Can I become who I want to be?
+## Why does saveDAI exists?
 
-That's a tough question but thankfully, our team is on it. Please bear with us while we're investigating.
+TBD
 
-## Have you had a chance to answer the previous question?
+## How can I use saveDAI?
 
-Yes, after a few months we finally found the answer. Sadly, Mike is on vacations right now so I'm afraid we are not able to provide the answer at this point.
+TBD
+
+## What is saveDAI?
+
+TBD
+
+## Buying saveDAI
+
+### How is saveDAI priced?
+
+TBD
+
+### How do claims work?
+
+TBD
+
+### How is insurance coverage provided?
+
+TBD
+
+### How does interest accrue?
+
+TBD
+
+## Withdrawing saveDAI
+
+### How can I withdraw for the asset and oTokens \(i.e., cDAI and ocDAI\)?
+
+TBD
+
+### How can I withdraw just the asset \(i.e., cDAI\)?
+
+TBD
+
+### How can I withdraw for the underlying asset \(i.e., DAI\)?
+
+TBD
+
+## Exercising Insurance
+
+### Why should I exercise insurance?
+
+TBD
+
+### How can I exercise insurance?
+
+TBD
+
+## Can I build on top of saveDAI?
+
+TBD
+
+## Security
+
+### Is saveDAI safe? Has it been audited?
+
+TBD
+
+### What if there is a bug in the saveDAI contract?
+
+TBD
+
+### Does the saveDAI contract have an administrator?
+
+TBD
+
+
 
 
 
