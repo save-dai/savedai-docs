@@ -6,15 +6,32 @@ description: >-
 
 # FAQ
 
-## Why does saveDAI exists?
+## Overview
 
-TBD
+### What is saveDAI?
+
+saveDAI is an insured, high-interest savings account that you control. There is no bank involved, and you can easily add to your savings, withdraw your savings, or move your savings between accounts (i.e., Ethereum wallets).
+
+### How does saveDAI work?
+
+When you deposit into saveDAI, saveDAI does two things with your funds. First, it lends out most of your savings (your principal) to generate interest. This is similar to how a traditional savings account earns interest. 
+
+Second, it uses a small amount of your savings to purchase insurance on your principal. Think of this as a form of deposit insurance, similar to FDIC insurance in the USA.
+
+### How does saveDAI _really_ work?
+
+saveDAI is an ERC20 token on the Ethereum blockchain. It's effectively a wrapper around functionality from several existing smart contract protocols. saveDAI's interest-generating component is cDAI, which it receives after lending most of the original DAI on Compound. The insurance component is ocDAI, which is a protective put option on the Opyn protocol that saveDAI purchases via Uniswap.
+
+### Why does saveDAI exist?
+
+The Decentralized Finance (DeFi) space within the Ethereum ecosystem has produced a number of amazing financial building blocks (some might call them legos), including lending and insurance protocols. Used together, those protocols can create an insured, high-interest savings account. But using them together involves a number of steps. 
+
+We built saveDAI to automate most of those steps in order to...
+
+1. Make it easier for the existing DeFi community -- users and developers alike -- to insure their interest-bearing savings
+2. Enable a wholy new set of people to open a protected savings account without a bank
 
 ## How can I use saveDAI?
-
-TBD
-
-## What is saveDAI?
 
 TBD
 
