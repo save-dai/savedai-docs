@@ -68,11 +68,13 @@ TBD
 
 ### Is saveDAI safe? Has it been audited?
 
-TBD
+\[update after audit and include link to audit report\]
 
 ### What if there is a bug in the saveDAI contract?
 
-TBD
+We recognize that this is a risk, and we have taken precautions to protect against this risk with rigorous internal testing and an external audit \[include link to audit report\]. 
+
+Even with this risk, you can still gain significant safety from the oTokens that are used to insure your saveDAI. From [Opyn's documentation](https://opyn.gitbook.io/opyn/faq#what-if-there-is-a-bug-in-opyns-smart-contracts), "\[w\]ith Opyn insurance, you can only lose your Compound deposits in the case that both Opyn and Compound are compromised at the same time. For example, if the probability that Opyn is compromised is 1% and the probability that Compound is compromised is 1%, then with Opyn insurance, your risk of losing your funds drops to 0.01%."
 
 ### Does the saveDAI contract have an administrator?
 
