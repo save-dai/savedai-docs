@@ -5,5 +5,5 @@
 * [ABIs and Contract Addresses](abis-and-contract-addresses.md)
 * [Protocol Overview](protocol-overview/README.md)
   * [Glossary of Terms](protocol-overview/glossary-of-terms.md)
-* [FAQ](untitled.md)
+* [FAQ](faq.md)
 

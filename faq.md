@@ -105,14 +105,11 @@ See [Opyn's FAQ](https://opyn.gitbook.io/opyn/faq#what-is-max-loss) and [whitepa
 
 Yes, absolutely! See the rest of our documentation for how to get started.
 
-
 ## Security
 
 ### Is saveDAI safe? Has it been audited?
 
 saveDAI is in the process of getting an audit.
-
-\[update after audit and include link to audit report\]
 
 ### What if there is a bug in the saveDAI contract?
 

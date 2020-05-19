@@ -31,7 +31,6 @@ The saveDAI token smart contract is an [EIP-20](https://eips.ethereum.org/EIPS/e
 * [Website](https://savedai.xyz/)
 * [Github](https://github.com/save-dai)
 * [Twitter](https://twitter.com/save_dai)
-* [Discord](https://discord.gg/E4YPxa)
 * [Medium](https://medium.com/savedai)
 * [Compound](https://compound.finance/)
 * [Opyn](https://opyn.co/#/)
