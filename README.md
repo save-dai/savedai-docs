@@ -2,14 +2,14 @@
 
 ## Protocol Introduction
 
-saveDAI makes it super simple for you to earn interest on your savings while staying protected against many risks that could impact your savings.  
-  
-All you have to do is deposit DAI and saveDAI takes care of the rest.  
-  
-Under the hood, saveDAI deposits your DAI into [Compound](https://compound.finance/) and receives back cDAI, then purchases insurance from [Opyn Protocol](https://www.opyn.co/) in the form of ocDAI. Your saveDAI tokens then represent the combination of cDAI and ocDAI — effectively a self-insured savings account.  
-  
-saveDAI will also allow you to submit an insurance claim to receive back the original value of your deposit, or withdraw your assets and insurance if you'd like.  
-  
+saveDAI makes it super simple for you to earn interest on your savings while staying protected against many risks that could impact your savings.
+
+All you have to do is deposit DAI and saveDAI takes care of the rest.
+
+Under the hood, saveDAI deposits your DAI into [Compound](https://compound.finance/) and receives back cDAI, then purchases insurance from [Opyn Protocol](https://www.opyn.co/) in the form of ocDAI. Your saveDAI tokens then represent the combination of cDAI and ocDAI — effectively a self-insured savings account.
+
+saveDAI will also allow you to submit an insurance claim to receive back the original value of your deposit, or withdraw your assets and insurance if you'd like.
+
 Note that saveDAI cannot protect your savings against all risks, and there will always be risks in finance, especially systems that are new.
 
 ## Self-insured Asset
@@ -34,5 +34,6 @@ The saveDAI token smart contract is an [EIP-20](https://eips.ethereum.org/EIPS/e
 * [Medium](https://medium.com/savedai)
 * [Compound](https://compound.finance/)
 * [Opyn](https://opyn.co/#/)
+* [Uniswap](https://uniswap.org/)
 * Quantstamp Audit Report \(TBD\)
 
