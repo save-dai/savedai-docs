@@ -103,23 +103,33 @@ See [Opyn's FAQ](https://opyn.gitbook.io/opyn/faq#what-is-max-loss) and [whitepa
 
 ## Can I build on top of saveDAI?
 
-TBD
+Yes, absolutely! See the rest of our documentation for how to get started.
 
 
 ## Security
 
 ### Is saveDAI safe? Has it been audited?
 
+saveDAI is in the process of getting an audit.
+
 \[update after audit and include link to audit report\]
 
 ### What if there is a bug in the saveDAI contract?
 
-We recognize that this is a risk, and we have taken precautions to protect against this risk with rigorous internal testing as well as an external audit \[include link to audit report\]. 
+saveDAI is built to be secure. In fact, in an effort to minimize bug and attack surface area, the saveDAI contract does not introduce any net new functionality. Rather, it simply wraps existing functionality provided by existing protocols.
 
-Even with this risk, you can still gain significant safety from the oTokens that are used to insure your saveDAI. From [Opyn's documentation](https://opyn.gitbook.io/opyn/faq#what-if-there-is-a-bug-in-opyns-smart-contracts),
->\[w\]ith Opyn insurance, you can only lose your Compound deposits in the case that both Opyn and Compound are compromised at the same time. For example, if the probability that Opyn is compromised is 1% and the probability that Compound is compromised is 1%, then with Opyn insurance, your risk of losing your funds drops to 0.01%.
+Still, we have taken steps to protect against bugs in the saveDAI contract with rigorous internal test, and we are in the process of getting an external audit.
 
 ### Does the saveDAI contract have an administrator?
 
-Yes, saveDAI has an extremely small administrative footprint. The owner of the saveDAI contract has the ability to change the name of the saveDAI token. The current name of the saveDAI token is `saveDAI_20210210` . The date portion \(i.e., `20210210` \) represents the expiration date of the current insurance on your saveDAI tokens. In other words, it represents Opyn's current oToken "expiry date".
+Yes, saveDAI does have an administrator. The saveDAI adminstrator has limited privileges. It cannot freeze or transfer funds, or change any functional parameters of the contract. 
 
+The owner of the saveDAI contract has the ability to pause deposits into saveDAI. If deposits are paused, no new funds can be added to the saveDAI contract and no new saveDAI tokens can be minted. However, all other saveDAI contract functions -- including withdrawals and insurance claims -- will still be available. 
+
+The primary reason this ability exists is to protect users from unexpected risks. For example, if a vulnerability is discovered in the contract, the owner can prevent new funds from being deposited and placed at risk. Existing funds can be withdrawn by those who hold saveDAI tokens (likely those that originally deposited the funds), and then migrated to the new saveDAI contract once the vulnerability is fixed.
+
+The deposit pause ability can also be used to enact a beta period for the contract where only a limited amount of value is deposited into the contract. Too much value added quickly can create risky conditions.
+
+The contract owner also has the ability to change the name of the saveDAI token. The reason this ability exists is to add clarity and specificity to the name in the case that additional ocDAI option series are released with similar parameters to the current series used by saveDAI.
+
+The current name of the saveDAI token is `saveDAI_20210210`. The date portion \(i.e., `20210210` \) represents the expiration date of the current insurance on your saveDAI tokens, which is the expiry date of the option represented by the ocDAI token.
