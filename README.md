@@ -2,7 +2,7 @@
 
 ## Protocol Introduction
 
-saveDAI makes it super simple for you to earn interest on your savings while staying protected against many risks that could impact your savings. test
+saveDAI makes it super simple for you to earn interest on your savings while staying protected against many risks that could impact your savings.
 
 All you have to do is deposit DAI and saveDAI takes care of the rest.
 
