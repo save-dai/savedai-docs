@@ -1,30 +1,34 @@
 # Getting Started
 
-## Protocol Introduction
+## Introduction
 
-saveDAI makes it super simple for you to earn interest on your savings while staying protected against many risks that could impact your savings.
+The SaveToken protocol is an open, decentralized protocol that makes it easy to open your own insured, interest-bearing savings account—without a bank.
 
-All you have to do is deposit DAI and saveDAI takes care of the rest.
+The following documentation describes the fundamentals of the protocol and how to interact with it. Please join the [community Discord server](https://discord.gg/kBempxZr); our team and members of the community look forward to helping you build on top of SaveToken!
 
-Under the hood, saveDAI deposits your DAI into [Compound](https://compound.finance/) and receives back cDAI, then purchases insurance from [Opyn Protocol](https://www.opyn.co/) in the form of ocDAI. Your saveDAI tokens then represent the combination of cDAI and ocDAI — effectively a self-insured savings account.
+## How does it work?
 
-saveDAI will also allow you to submit an insurance claim to receive back the original value of your deposit, or withdraw your assets and insurance if you'd like.
+The SaveToken protocol makes it easy to wrap any interest-bearing token with any corresponding insurance token. This enables SaveToken hodlers to generate yield while at the same time protecting their underlying assets.
 
-Note that saveDAI cannot protect your savings against all risks, and there will always be risks in finance, especially systems that are new.
+For instance, a user may wish to use [Aave's](https://aave.com/) lending and borrowing protocol to generate yield via aTokens while at the same time insuring those aTokens via a corresponding insurance protocol like [Cover](https://www.coverprotocol.com/). 
 
-## Self-insured Asset
+To do this, the user would choose to mint SaveTokens with an ERC-20 stablecoin like DAI. The SaveToken protocol will then wrap the DAI with aDAI from Aave and CLAIM tokens from Cover, thus generating an insured, interest-bearing savings account.
 
-The saveDAI token smart contract is an [EIP-20](https://eips.ethereum.org/EIPS/eip-20) compliant representation of interest-bearing cDAI tokens bundled with insurance protection from ocDAI tokens.
+Ergo, the example above:
 
-| Savings | Underlying Asset | Underlying Protected | oToken Protection |
+| SaveToken | Underlying Asset | Underlying Protected | Cover Protection |
 | :--- | :--- | :--- | :--- |
-| saveDAI | DAI | cDAI | ocDAI |
+| SaveDAI | DAI | aDAI | CLAIM |
 
-## Articles
+## Architecture
 
-* [Introducing saveDAI](https://medium.com/savedai/coming-soon-savedai-98c5cb046e98)
-* [saveDAI: More secure savings via a simpler saver experience](https://medium.com/savedai/savedai-more-secure-savings-via-a-simpler-saver-experience-3fb4274ecf68)
-* [A peak inside the saveDAI smart contract](https://medium.com/@spengrah/9b0316c26de)
+![](.gitbook/assets/architecture.png)
+
+
+
+The protocol is implemented as a set of **smart contracts** on top of the Ethereum blockchain.
+
+**Note that the SaveToken protocol cannot protect your savings against all risks, and there will always be risks in finance, especially systems that are new.**
 
 ## Resources
 
@@ -32,8 +36,5 @@ The saveDAI token smart contract is an [EIP-20](https://eips.ethereum.org/EIPS/e
 * [Github](https://github.com/save-dai)
 * [Twitter](https://twitter.com/save_dai)
 * [Medium](https://medium.com/savedai)
-* [Compound](https://compound.finance/)
-* [Opyn](https://opyn.co/#/)
-* [Uniswap](https://uniswap.org/)
 * Quantstamp Audit Report \(TBD\)
 
