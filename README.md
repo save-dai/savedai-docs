@@ -1,8 +1,12 @@
+---
+description: >-
+  The SaveToken protocol is an open, decentralized protocol that makes it easy
+  to open your own insured, interest-bearing savings account—without a bank.
+---
+
 # Getting Started
 
 ## Introduction
-
-The SaveToken protocol is an open, decentralized protocol that makes it easy to open your own insured, interest-bearing savings account—without a bank.
 
 The following documentation describes the fundamentals of the protocol and how to interact with it. Please join the [community Discord server](https://discord.gg/kBempxZr); our team and members of the community look forward to helping you build on top of SaveToken!
 
