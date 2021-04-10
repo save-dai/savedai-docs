@@ -3,7 +3,10 @@
 * [Getting Started](README.md)
 * [Dev Environment](dev-environment.md)
 * [ABIs and Contract Addresses](abis-and-contract-addresses.md)
-* [Protocol Overview](protocol-overview/README.md)
-  * [Glossary of Terms](protocol-overview/glossary-of-terms.md)
+* [SaveTokens](savetoken.md)
+* [SaveToken Factory](savetoken-factory.md)
+* [Adapters](adapters.md)
+* [Libraries](libraries.md)
+* [Rewards Farmer](rewards-farmer.md)
 * [FAQ](faq.md)
 
