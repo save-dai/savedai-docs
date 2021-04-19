@@ -18,11 +18,11 @@ For instance, a user may wish to use [Aave's](https://aave.com/) lending and bor
 
 To do this, the user would choose to mint SaveTokens with an ERC-20 stablecoin like DAI. The SaveToken protocol will then wrap the DAI with aDAI from Aave and CLAIM tokens from Cover, thus generating an insured, interest-bearing savings account.
 
-Ergo, the example above:
+Ergo, the example above might look like the following: 
 
-| SaveToken | Underlying Asset | Underlying Protected | Cover Protection |
+| SaveToken | Underlying | Underlying Asset | Underlying Protected |
 | :--- | :--- | :--- | :--- |
-| SaveDAI | DAI | aDAI | CLAIM |
+| SaveDAI\_Aave\_Cover\_Expire\_1\_Sept\_2021 | DAI | aDAI | CLAIM |
 
 ## Architecture
 
