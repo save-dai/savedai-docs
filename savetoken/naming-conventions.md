@@ -16,14 +16,14 @@ The convention is as follows:
 
 In the example `SaveDAI` SaveToken below:
 
-* `DAI` is the underlying token deposited to mint SaveDAI
-* Aave is the asset token protocol used to obtain the interest-bearing `aDAI` asset
-* Cover is the insurance token protocol used to obtain `CLAIM` tokens and protect the underlying `aDAI` asset
-* The coverage from the `CLAIM` tokens expires on September 1st, 2022.
+-   `DAI` is the underlying token deposited to mint SaveDAI
+-   Aave is the asset token protocol used to obtain the interest-bearing `aDAI` asset
+-   Cover is the insurance token protocol used to obtain `CLAIM` tokens and protect the underlying `aDAI` asset
+-   The coverage from the `CLAIM` tokens expires on September 1st, 2022.
 
-| SaveToken | Underlying | Underlying Asset | Underlying Protected |
-| :--- | :--- | :--- | :--- |
-| SaveDAI\_Aave\_Cover\_Expires\_1\_Sep\_2022 | DAI | aDAI | CLAIM |
+| SaveToken                             | Underlying | Interest-Bearing Token | Insurance Token |
+| :------------------------------------ | :--------- | :--------------------- | :-------------- |
+| SaveDAI_Aave_Cover_Expires_1_Sep_2022 | DAI        | aDAI                   | CLAIM           |
 
 ### **SaveToken Symbols**
 
@@ -33,7 +33,6 @@ Similarly, the convention used for SaveToken symbols is as follows:
 
 In the example `SaveDAI` SaveToken:
 
-| SaveToken | Symbol |
-| :--- | :--- |
-| SaveDAI\_Aave\_Cover\_Expires\_1\_Sep\_2022 | SaveDAI\_SEP2022 |
-
+| SaveToken                             | Symbol          |
+| :------------------------------------ | :-------------- |
+| SaveDAI_Aave_Cover_Expires_1_Sep_2022 | SaveDAI_SEP2022 |

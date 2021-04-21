@@ -1,13 +1,13 @@
 ---
 description: >-
-  We use libraries to handle storage for the different SaveTokens that are
-  created. This makes the SaveToken protocol modular in that all adapters can be
-  reused to create any type of SaveToken.
+    We use libraries to handle storage for the different SaveTokens that are
+    created. This makes the SaveToken protocol modular in that all adapters can be
+    reused to create any type of SaveToken.
 ---
 
 # Libraries
 
-Given the modular nature of adapters, each can be reused by any SaveToken that is created. For instance, if we deploy an `AaveAdapter` to be used by the `SaveDAI_Aave_Cover_Expires_1_Sep_2022`it that same `AaveAdapter` could be reused by another type of SaveToken \(e.g., `SaveDAI_Aave_Opyn_Expires_1_Dec_2021`\) 
+Given the modular nature of [adapters](./adapters/README.md), each can be reused by any SaveToken that is created. For instance, if we deploy an `AaveAdapter` to be used by the `SaveDAI_Aave_Cover_Expires_1_Sep_2022` that same `AaveAdapter` could be reused by another type of SaveToken \(e.g., `SaveDAI_Aave_Opyn_Expires_1_Dec_2021`\).
 
 This both enables anyone to bootstrap and build resources for a community of SaveToken savers, as well as reduce the costs associated with deploying contracts \(as each adapter need only be deployed once\).
 
@@ -36,7 +36,7 @@ The StorageLib also makes available getter functions that can be used by the ass
 
 ### RewardsLib
 
-This library is used to support any SaveToken that uses an asset token protocol, via an asset adapter, in which rewards or governance tokens are accrued. These attributes are set and stored as an object in the `SAVETOKEN_REWARDS`  where they can be referenced by the SaveToken contract.
+This library is used to support any SaveToken that uses an asset token protocol, via an asset adapter, in which rewards or governance tokens are accrued. These attributes are set and stored as an object in the `SAVETOKEN_REWARDS` where they can be referenced by the SaveToken contract.
 
 ```text
 struct RewardsStorage {
@@ -45,7 +45,7 @@ struct RewardsStorage {
 }
 ```
 
-The RewardsLib also makes available setter and getter functions that can be used by the SaveToken contract and asset adapters. For asset token protocols where rewards or governance tokens accrue, the RewardsLib is used to set and retrieve the [rewards farmer](https://app.gitbook.com/@savedai-admin/s/savedai/~/drafts/-MYfEsJGt5c2iY-CRuI7/rewards-farmer) `logicContract` address as well as the `farmerProxy` mapping which maps a saver's address to their corresponding rewards farmer proxy address.
+The RewardsLib also makes available setter and getter functions that can be used by the SaveToken contract and asset adapters. For asset token protocols where rewards or governance tokens accrue, the RewardsLib is used to set and retrieve the [rewards farmer](./rewards-farmer) `logicContract` address as well as the `farmerProxy` mapping which maps a saver's address to their corresponding rewards farmer proxy address.
 
 ### PausableLib
 
@@ -73,4 +73,3 @@ struct ERC20Storage {
 ```
 
 The ERC20StorageLib is used to set and get ERC20 metadata including `name`, `symbol`, and `decimals` as well as `balances`, `allowances`, and `totalSupply`.
-
